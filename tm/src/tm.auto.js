@@ -4,7 +4,7 @@ const { process } = require('./process.js'); // Assuming your processing functio
 const { log, error } = require('console');
 
 // Get the directory path where the CSV files are located
-const directoryPath = path.resolve(__dirname, './csv');
+const directoryPath = path.resolve(__dirname, '../csv');
 
 // Read the contents of the directory
 fs.readdir(directoryPath, (err, files) => {

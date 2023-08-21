@@ -18,13 +18,18 @@ function process(csv, index) {
       const cohort = Object.values(row)[0];
       const fullName = Object.values(row)[1];
       const email = Object.values(row)[2];
-      const telefone = Object.values(row)[3];
+      const phone_number = Object.values(row)[3];
 
-      newFile.push({ cohort , name: formatter(cohort, fullName), email, telefone });
+      newFile.push({ cohort , name: formatter(cohort, fullName), email, phone_number });
     })
     .on('end', () => {
       table(newFile);
       // log(newFile);
+      
+      log(' ');
+      log(`Total: ${newFile.length} pessoas`)
+      log(' ');
+
       log('===========================================');
       log('           CSV parsing complete!           ');
       log('===========================================');

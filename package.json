@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./auto.js"
+    "tm": "node ./tm/src/tm.auto.js",
+    "dm": "node ./dm/src/dm.auto.js"
   },
   "keywords": [],
   "author": "",
