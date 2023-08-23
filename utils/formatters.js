@@ -1,4 +1,4 @@
-function formatter(str1, str2) {
+function formatName(str1, str2) {
   // Process the first string
   const parts1 = str1.split('-');
   const prefix1 = parts1[0].toUpperCase();
@@ -14,4 +14,11 @@ function formatter(str1, str2) {
   return `${formattedStr1} ${formattedStr2}`;
 }
 
-module.exports = { formatter };
+function formatPhoneNumber(phoneNumber) {
+  // Remove any non-digit characters from the phone number
+  const digitsOnly = phoneNumber.replace(/\D/g, '');
+  
+  // Add the country code and return the formatted number
+  return '+55' + digitsOnly;
+}
+module.exports = { formatName, formatPhoneNumber };

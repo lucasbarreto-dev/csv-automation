@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { process } = require('./process.js'); // Assuming your processing function is defined in process.js
+const { process } = require('./processCsv.js'); // Assuming your processing function is defined in process.js
 const { log, error } = require('console');
 
 // Get the directory path where the CSV files are located

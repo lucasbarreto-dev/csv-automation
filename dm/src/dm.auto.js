@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { process } = require('./process.js');
+const { process } = require('./processCsv');
 const { log, error } = require('console');
 
 // Get the directory path where the CSV files are located
@@ -28,15 +28,10 @@ fs.readdir(directoryPath, (err, files) => {
         if (stats.isFile() && file.endsWith('.csv')) {
             process(filePath, index);
         }
-        log('ITERATION: ', index);
+        log('ITERATION: ', index + 1);
     });
 
     log('FILE: ', file)
 
   });
 });
-
-
-
-
-
