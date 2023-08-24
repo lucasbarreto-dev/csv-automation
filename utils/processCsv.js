@@ -1,6 +1,6 @@
 const fs = require('fs');
 const csvParser = require('csv-parser');
-const { formatName } = require('../../utils/formatters');
+const { formatName } = require('./formatters');
 const { csvWriter } = require('./writeCsv');
 const { log, table } = require('console');
 
@@ -15,14 +15,14 @@ function process(csv, index) {
   readableStream.pipe(csvParser({ skip: 1 })).on('data', (row) => {
 
       // Access values by column name
-      const cohort = Object.values(row)[0];
+      const Cohort = Object.values(row)[0];
       const fullName = Object.values(row)[1];
       const Email = Object.values(row)[2];
       const Phone = Object.values(row)[3];
 
       newFile.push({ 
-        cohort, 
-        Name: formatName(cohort, fullName), 
+        Cohort, 
+        Name: formatName(Cohort, fullName), 
         Email, 
         Phone 
       });
