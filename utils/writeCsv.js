@@ -20,6 +20,7 @@ function csvWriter(newFile, index) {
         } else {
           console.log('CSV file written successfully!');
         }
+
       });
     }
   })
