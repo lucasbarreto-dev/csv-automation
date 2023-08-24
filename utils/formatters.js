@@ -22,4 +22,20 @@ function formatPhoneNumber(phoneNumber) {
   return '+55' + digitsOnly;
 }
 
-module.exports = { formatName, formatPhoneNumber };
+function formatCohort(cohort) {
+  const capitalizedLetter = cohort.split('-')[2].charAt(0).toUpperCase();
+  const followingLetters = cohort.split('-')[2].slice(1);
+
+  return capitalizedLetter + followingLetters; 
+}
+
+function formatProgram(program) {
+  return program.split('-')[0].toUpperCase();
+}
+
+module.exports = { 
+  formatName, 
+  formatPhoneNumber,
+  formatCohort, 
+  formatProgram,
+};
