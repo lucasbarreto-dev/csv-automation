@@ -21,4 +21,5 @@ function formatPhoneNumber(phoneNumber) {
   // Add the country code and return the formatted number
   return '+55' + digitsOnly;
 }
+
 module.exports = { formatName, formatPhoneNumber };
