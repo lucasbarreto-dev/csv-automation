@@ -10,7 +10,6 @@ function auto(directoryPath) {
         error('Error reading directory:', err);
     }
 
-    // Loop through each file in the directory
     files.forEach(async (file, index) => {
       const filePath = path.join(directoryPath, file);
 
@@ -20,10 +19,14 @@ function auto(directoryPath) {
               error('Error checking file status:', err);
           }
 
-          if (stats.isFile() && file.endsWith('.csv')) {
-              process(filePath, index);
-          }
-          log('ITERATION: ', index + 1);
+          if (stats.isFile()) {
+            if (file === '.DS_Store') {
+                log('Skipped .DS_Store file:', file);
+            } else if (file.endsWith('.csv')) {
+                process(filePath, index);
+            }
+        }          
+        log('ITERATION: ', index + 1);
       });
       log('FILE: ', file)
     });
