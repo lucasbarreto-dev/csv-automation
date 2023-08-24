@@ -1,9 +1,9 @@
 const path = require('path');
 const { auto } = require('./utils/auto');
 
-const tm = path.resolve(__dirname, './tm/csv');
-const dm = path.resolve(__dirname, './dm/csv');
+const TM = path.resolve(__dirname, './tm/csv');
+const DM = path.resolve(__dirname, './dm/csv');
 
-const directories = [ dm, tm ];
+const directories = [ DM, TM ];
 
 directories.forEach((directory) => auto(directory));
