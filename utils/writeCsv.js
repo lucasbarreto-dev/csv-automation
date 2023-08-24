@@ -1,9 +1,12 @@
 const fs = require('fs');
+const { formatCohort, formatProgram } = require('./formatters');
 
 function csvWriter(newFile, index) {
 
+  const program = formatProgram(Object.values(newFile[0])[0]);
+  const cohort = formatCohort(Object.values(newFile[0])[0]);
+
   const headers = Object.keys(newFile[0]);
-  const cohort = Object.values(newFile[0])[0].split('-')[0].toUpperCase();
 
   headers.slice(1).forEach((key, i) => {
     if (i > 0) {
@@ -11,11 +14,11 @@ function csvWriter(newFile, index) {
       .map((row) => row.join(','))
       .join('\n');
 
-      fs.writeFile(`[${cohort}]-T${index + 1} ${key}.csv`, csvContent, (err) => {
+      fs.writeFile(`[${program}]-T${index + 1} ${cohort} ${key}.csv`, csvContent, (err) => {
         if (err) {
           console.error('Error writing CSV file:', err);
         } else {
-          console.log('Email CSV file written successfully!');
+          console.log('CSV file written successfully!');
         }
       });
     }
