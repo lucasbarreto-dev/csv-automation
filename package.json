@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "auto": "node .",
-    "clean": "./script.sh",
+    "clean": "./remove.sh",
     "rmEmail": "./removeEmail.sh",
     "rmPhone": "./removePhone.sh"
   },
