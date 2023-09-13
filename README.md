@@ -90,6 +90,9 @@ directories.forEach((directory) => auto(directory));
 <br />
 
 ### 5 - Conferindo os arquivos na pasta
+
+Ao execução do comando abaixo abrirá a pasta permitindo uma interação mais visual (<strong>user friendly</strong>).
+
 ```sh
 open $(pwd)
 ```
