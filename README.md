@@ -4,7 +4,7 @@
   - [1 - Clonando o repositório](#1---clone-o-repositório)
   - [2 - Instale as dependências do projeto](#2---instale-as-dependências-do-projeto)
   - [3 - Crie os diretórios tm e dm](#3---crie-os-diretórios-tm-e-dm)
-  - [4 - Execute o script](#4---execute-o-script)
+  - [4 - Execute o comando](#4---execute-o-comando)
   - [5 - Conferindo os arquivos na pasta](#)
   - [6 (Opcional)- Como apagar os arquvios gerados pela automação](#6---apagar-os-arquivos-gerados-por-automação) 
     - [6.1 - Como apagar todos os arquivos](#61---apagar-todos-os-arquivos)
@@ -17,7 +17,13 @@
   <strong>ATENÇÃO!</strong>
 </h3>
 
-- <h3>Para usar esse projeto é necessário ter uma conta no GitHub e noções de bash (terminal linux ou Mac)</h3>
+- <h3>Para usar esse projeto é necessário:
+    <ul> 
+      <li>Ter uma conta no GitHub</li> 
+      <li>Noções de bash (terminal linux ou Mac)</li>
+      <li>Node.js instalado</li>
+    </ul>
+  </h3>
 
 - <h3>Todos os comandos devem ser executados na raíz do projeto</h3>
 <hr>
@@ -56,13 +62,11 @@ npm install
 <br />
 <br />
 
-### 4 - Execute o script
+### 4 - Execute o comando
 
 ```sh
 node .
 ```
-
-<p>O comando acima deve ser executado na raíz do projeto, executando o arquivo <strong>index.js</strong>.</p>
 
 <!--- 
 ```js
