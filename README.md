@@ -1,8 +1,31 @@
 # csv-automation
 
+## Sumário
+  - [1 - Clonando o repositório](#1---clone-o-repositório)
+  - [2 - Instale as dependências do projeto](#2---instale-as-dependências-do-projeto)
+  - [3 - Crie os diretórios tm e dm](#3---crie-os-diretórios-tm-e-dm)
+  - [4 - Execute o script](#4---execute-o-script)
+  - [5 - Conferindo os arquivos na pasta](#)
+  - [6 (Opcional)- Como apagar os arquvios gerados pela automação](#6---apagar-os-arquivos-gerados-por-automação) 
+    - [6.1 - Como apagar todos os arquivos](#61---apagar-todos-os-arquivos)
+    - [6.2 - Como apagar somente os arquivos com nome e email](#62---apagar-apenas-os-arquivos-com-nome-e-e-mail) 
+    - [6.3 - Como apagar somente os arquivos com nome e telefone](#63---apagar-apenas-os-arquivos-com-nome-e-telefone)
+
+<hr>
+
+<h3>
+  <strong>ATENÇÃO!</strong>
+</h3>
+
+- <h3>Para usar esse projeto é necessário ter uma conta no GitHub e noções de bash (terminal linux ou Mac)</h3>
+
+- <h3>Todos os comandos devem ser executados na raíz do projeto</h3>
+<hr>
+
 ## Getting started 
 
 ### 1 - Clone o repositório
+<p>Pelo terminal, navegue até o diretório onde você quer guardar o repositório localmente e use o comando abaixo.</p>
 
 ```sh
 git clone <link-do-repositório>
@@ -48,10 +71,14 @@ directories.forEach((directory) => auto(directory));
 
 <p>Ao ser executado, o arquivo irá gerar na raíz do projeto 2 arquivos para cada arquivo nos diretórios tm/csv e dm/csv.</p>
 
+### 5 - Conferindo os arquivos na pasta
+```sh
+open $(pwd)
+```
 
-### 5 - Apagar os arquivos gerados por automação:
+### 6 - Apagar os arquivos gerados por automação:
 
-  - #### 5.1 - Apagar todos os arquivos:
+  - #### 6.1 - Apagar todos os arquivos:
     ```sh
     // em node
 
@@ -66,7 +93,7 @@ directories.forEach((directory) => auto(directory));
     ./remove.sh
     ```
 
-  - #### 5.2 - Apagar apenas os arquivos com nome e e-mail
+  - #### 6.2 - Apagar apenas os arquivos com nome e e-mail
 
     ```sh
     // em node
@@ -81,7 +108,7 @@ directories.forEach((directory) => auto(directory));
     ./removeEmail.sh
     ```
 
-  - #### 5.3 - Apagar apenas os arquivos com nome e phone
+  - #### 6.3 - Apagar apenas os arquivos com nome e telefone
 
     ```sh
     // em node
