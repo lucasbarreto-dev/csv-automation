@@ -22,7 +22,10 @@
 - <h3>Todos os comandos devem ser executados na raíz do projeto</h3>
 <hr>
 
-## Getting started 
+<br />
+<br />
+
+# Getting started 
 
 ### 1 - Clone o repositório
 <p>Pelo terminal, navegue até o diretório onde você quer guardar o repositório localmente e use o comando abaixo.</p>
@@ -30,12 +33,17 @@
 ```sh
 git clone <link-do-repositório>
 ```
+<br />
+<br />
 
 ### 2 - Instale as dependências do projeto
 
 ```sh
 npm install
 ```
+<br />
+<br />
+
 ### 3 - Crie os diretórios <strong>tm</strong> e <strong>dm</strong>. 
   - Dentro de cada um, crie um diretório chamado <strong>csv</strong>
 
@@ -44,6 +52,9 @@ npm install
   </p>
 
 ![Estrutura de pastas e arquivos](https://github.com/lucasbarreto-dev/csv-automation/blob/main/public/%C3%81rvore%20-%20pastas%20e%20arquivos.png?raw=true)
+
+<br />
+<br />
 
 ### 4 - Execute o script
 
@@ -69,12 +80,19 @@ directories.forEach((directory) => auto(directory));
 ```
 --->
 
-<p>Ao ser executado, o arquivo irá gerar na raíz do projeto 2 arquivos para cada arquivo nos diretórios tm/csv e dm/csv.</p>
+<p>Ao ser executado, o arquivo irá gerar <strong> na raíz do projeto </strong> 2 arquivos para cada arquivo nos diretórios tm/csv e dm/csv.</p>
+
+<br />
+<br />
 
 ### 5 - Conferindo os arquivos na pasta
 ```sh
 open $(pwd)
 ```
+
+<br />
+<br />
+
 
 ### 6 - Apagar os arquivos gerados por automação:
 
