@@ -28,8 +28,9 @@ npm install
 node .
 ```
 
-<p>O comando acima deve ser executado na raíz do projeto, executando o arquivo <strong>index.js</strong></p>.
+<p>O comando acima deve ser executado na raíz do projeto, executando o arquivo <strong>index.js</strong>.</p>
 
+<!--- 
 ```js
 // ./index.js
 
@@ -43,6 +44,7 @@ const directories = [ DM, TM ];
 
 directories.forEach((directory) => auto(directory));
 ```
+--->
 
 <p>Ao ser executado, o arquivo irá gerar na raíz do projeto 2 arquivos para cada arquivo nos diretórios tm/csv e dm/csv.</p>
 
