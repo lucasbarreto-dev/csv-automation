@@ -1,18 +1,55 @@
 # csv-automation
 
-## Getting started 
+## Sumário
+  - [1 - Clonando o repositório](#1---clone-o-repositório)
+  - [2 - Instale as dependências do projeto](#2---instale-as-dependências-do-projeto)
+  - [3 - Crie os diretórios tm e dm](#3---crie-os-diretórios-tm-e-dm)
+  - [4 - Execute o comando](#4---execute-o-comando)
+  - [5 - Conferindo os arquivos na pasta](#)
+  - [6 (Opcional)- Como apagar os arquvios gerados pela automação](#6---apagar-os-arquivos-gerados-por-automação) 
+    - [6.1 - Como apagar todos os arquivos](#61---apagar-todos-os-arquivos)
+    - [6.2 - Como apagar somente os arquivos com nome e email](#62---apagar-apenas-os-arquivos-com-nome-e-e-mail) 
+    - [6.3 - Como apagar somente os arquivos com nome e telefone](#63---apagar-apenas-os-arquivos-com-nome-e-telefone)
+
+<hr>
+
+<h3>
+  <strong>ATENÇÃO!</strong>
+</h3>
+
+- <h3>Para usar esse projeto é necessário:
+    <ul> 
+      <li>Ter uma conta no GitHub</li> 
+      <li>Noções de bash (terminal linux ou Mac)</li>
+      <li>Node.js instalado</li>
+    </ul>
+  </h3>
+
+- <h3>Todos os comandos devem ser executados na raíz do projeto</h3>
+<hr>
+
+<br />
+<br />
+
+# Getting started 
 
 ### 1 - Clone o repositório
+<p>Pelo terminal, navegue até o diretório onde você quer guardar o repositório localmente e use o comando abaixo.</p>
 
 ```sh
 git clone <link-do-repositório>
 ```
+<br />
+<br />
 
 ### 2 - Instale as dependências do projeto
 
 ```sh
 npm install
 ```
+<br />
+<br />
+
 ### 3 - Crie os diretórios <strong>tm</strong> e <strong>dm</strong>. 
   - Dentro de cada um, crie um diretório chamado <strong>csv</strong>
 
@@ -22,14 +59,16 @@ npm install
 
 ![Estrutura de pastas e arquivos](https://github.com/lucasbarreto-dev/csv-automation/blob/main/public/%C3%81rvore%20-%20pastas%20e%20arquivos.png?raw=true)
 
-### 4 - Execute o script
+<br />
+<br />
+
+### 4 - Execute o comando
 
 ```sh
 node .
 ```
 
-<p>O comando acima deve ser executado na raíz do projeto, executando o arquivo <strong>index.js</strong></p>.
-
+<!--- 
 ```js
 // ./index.js
 
@@ -43,13 +82,28 @@ const directories = [ DM, TM ];
 
 directories.forEach((directory) => auto(directory));
 ```
+--->
 
-<p>Ao ser executado, o arquivo irá gerar na raíz do projeto 2 arquivos para cada arquivo nos diretórios tm/csv e dm/csv.</p>
+<p>Ao ser executado, o arquivo irá gerar <strong> na raíz do projeto </strong> 2 arquivos para cada arquivo nos diretórios tm/csv e dm/csv.</p>
+
+<br />
+<br />
+
+### 5 - Conferindo os arquivos na pasta
+
+Ao execução do comando abaixo abrirá a pasta permitindo uma interação mais visual (<strong>user friendly</strong>).
+
+```sh
+open $(pwd)
+```
+
+<br />
+<br />
 
 
-### 5 - Apagar os arquivos gerados por automação:
+### 6 - Apagar os arquivos gerados por automação:
 
-  - #### 5.1 - Apagar todos os arquivos:
+  - #### 6.1 - Apagar todos os arquivos:
     ```sh
     // em node
 
@@ -64,7 +118,7 @@ directories.forEach((directory) => auto(directory));
     ./remove.sh
     ```
 
-  - #### 5.2 - Apagar apenas os arquivos com nome e e-mail
+  - #### 6.2 - Apagar apenas os arquivos com nome e e-mail
 
     ```sh
     // em node
@@ -79,7 +133,7 @@ directories.forEach((directory) => auto(directory));
     ./removeEmail.sh
     ```
 
-  - #### 5.3 - Apagar apenas os arquivos com nome e phone
+  - #### 6.3 - Apagar apenas os arquivos com nome e telefone
 
     ```sh
     // em node
