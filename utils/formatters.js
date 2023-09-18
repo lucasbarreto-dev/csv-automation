@@ -2,8 +2,9 @@ function formatName(Cohort, fullName) {
   // Process the first string
   const parts1 = Cohort.split('-');
   const prefix1 = parts1[0].toUpperCase();
+  const prefix2 = parts1[1][0].toUpperCase() + parts1[1][1] + parts1[1][2];
   const month1 = parts1[2].charAt(0).toUpperCase() + parts1[2].slice(1);
-  const formattedCohort = `[${prefix1}-${month1}]`;
+  const formattedCohort = `[${prefix1}-${prefix2}-${month1}]`;
   
   // Process the second string
   const words2 = fullName.split(' ');
