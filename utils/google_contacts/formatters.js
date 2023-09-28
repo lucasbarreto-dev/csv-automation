@@ -7,8 +7,15 @@ function formatName(Cohort, fullName) {
   const formattedCohort = `[${prefix1}-${prefix2}-${month1}]`;
   
   // Process the second string
-  const words2 = fullName.split(' ');
-  const capitalizedWords2 = words2.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+  const name = fullName.split(' ');
+
+  const capitalizedWords2 = name.map((word) => {
+    if (word.length > 2) {
+      return word.charAt(0).toUpperCase() + word.slice(1)
+    } 
+    return word.toLowerCase();
+  });
+
   const formattedfullName = capitalizedWords2.join(' ');
   
   // Return the combined formatted strings
