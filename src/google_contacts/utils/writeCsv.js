@@ -14,7 +14,7 @@ function csvWriter(newFile, index) {
         ['Name', key], ...newFile.map((obj) => [obj.Name, obj[key]])
     ].map((row) => row.join(',')).join('\n');
 
-      fs.writeFile(`[${program}]-T0${index + 1} ${cohort} ${key}.csv`, csvContent, (err) => {
+      fs.writeFile(`[${program}]-T0${index} ${cohort} ${key}.csv`, csvContent, (err) => {
         if (err) {
           console.error('Error writing CSV file:', err);
         } else {
