@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "contacts": "node ./utils/google_contacts/index.js",
+    "contacts": "node ./src/google_contacts/index.js",
+    "cl": "node ./src/cl/index.js ",
     "clean": "./remove.sh",
     "rmEmail": "./removeEmail.sh",
     "rmPhone": "./removePhone.sh"
