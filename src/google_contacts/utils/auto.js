@@ -33,5 +33,4 @@ function auto(directoryPath) {
   });
 }
 
-
 module.exports = { auto };

@@ -6,15 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "contacts": "node ./src/google_contacts/index.js",
-    "cl": "node ./src/cl/index.js ",
+    "cl": "node ./src/google_contacts/index.js && node ./src/cl/index.js && ./removeEmail.sh && ./removePhone.sh",
+    "certifications": "node ./src/google_contacts/index.js && node ./src/certifications/index.js && ./removeEmail.sh && ./removePhone.sh",
     "clean": "./remove.sh",
     "rmEmail": "./removeEmail.sh",
-    "rmPhone": "./removePhone.sh"
+    "rmPhone": "./removePhone.sh",
+    "open": "open $(pwd)"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "csv-parser": "^3.0.0"
+    "csv-parser": "^3.0.0",
+    "readline-sync": "1.4.10"
   }
 }
