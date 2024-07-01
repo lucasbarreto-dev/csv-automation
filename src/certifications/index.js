@@ -1,4 +1,6 @@
 const path = require('path');
+const { auto } = require('./utils/auto');
 
-const document = '';
+const src = path.resolve(__dirname, '../../');
 
+auto(src);
