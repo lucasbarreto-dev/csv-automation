@@ -130,7 +130,7 @@ dist
 .pnp.*
 
 backup/
-dm/
-tm/
-ht/
-hd/
+dm/csv
+tm/csv
+ht/csv
+hd/csv
