@@ -3,7 +3,7 @@
 ## Sumário
   - [1 - Clonando o repositório](#1---clone-o-repositório)
   - [2 - Instale as dependências do projeto](#2---instale-as-dependências-do-projeto)
-  - [3 - Crie os diretórios tm e dm](#3---crie-os-diretórios-tm-e-dm)
+  - [3 - Crie os diretórios tm, dm, ht e hd](#3---crie-os-diretórios-tm-dm-ht-e-hd)
   - [4 - Execute o comando](#4---execute-o-comando)
   - [5 - Conferindo os arquivos na pasta](#)
   - [6 (Opcional)- Como apagar os arquvios gerados pela automação](#6---apagar-os-arquivos-gerados-por-automação) 
@@ -50,8 +50,14 @@ npm install
 <br />
 <br />
 
-### 3 - Crie os diretórios <strong>tm</strong> e <strong>dm</strong>. 
-  - Dentro de cada um, crie um diretório chamado <strong>csv</strong>
+### 3 - Crie os diretórios <strong>tm</strong>, <strong>dm</strong>, <strong>ht</strong> e <strong>hd</strong>.
+
+  <p>Na raíz do projeto, execute o comando:</p>
+
+```sh
+  npm run create
+```
+  <!-- - Dentro de cada um, crie um diretório chamado <strong>csv</strong> -->
 
   <p>
     A estrutura de pastas e arquivos necessária ao funcionamento do projeto imediatamente após a clonagem do repositório e exportação dos csv's de cada turma, deve estar conforme a imagem abaixo:
