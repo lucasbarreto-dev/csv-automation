@@ -23,7 +23,7 @@ function auto(directoryPath) {
             if (file === '.DS_Store') {
                 log('Skipped .DS_Store file:', file);
               } else if (file.endsWith('Phone.csv')) {
-                log('Skipped Pe file:', file);
+                log('Skipped file:', file);
             } else if (file.endsWith('Email.csv')) {
                 process(filePath);
             }
