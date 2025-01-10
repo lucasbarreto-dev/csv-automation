@@ -2,8 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const { process } = require('./processCsv'); 
 const { log, error } = require('console');
-const readline = require('readline-sync');
-
 
 function auto(directoryPath) {
   // Read the contents of the directory
