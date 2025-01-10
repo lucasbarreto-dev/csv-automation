@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create": "mkdir dm/csv tm/csv, ht/csv, hd/csv",
+    "create": "mkdir dm/csv tm/csv, ht/csv, hd/csv, at/csv",
     "contacts": "open $(pwd) && node ./src/google_contacts/index.js",
     "cl": "open $(pwd) && node ./src/google_contacts/index.js && node ./src/cl/index.js && ./removeEmail.sh && ./removePhone.sh",
     "certifications": "open $(pwd) && node ./src/google_contacts/index.js && node ./src/certifications/index.js && ./removeEmail.sh && ./removePhone.sh",
