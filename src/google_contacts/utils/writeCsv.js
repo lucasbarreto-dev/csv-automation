@@ -16,7 +16,7 @@ function csvWriter(newFile, index) {
 
       fs.writeFile(`[${program}]-T0${index} ${cohort} ${key}.csv`, csvContent, (err) => {
         if (err) {
-          console.error('Error writing CSV file:', err);
+          console.error('Error writing CSV file: ', err);
         } else {
           console.log('CSV file written successfully!');
         }
